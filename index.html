@@ -5,27 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-           .tm{
-            padding-left: 20%;
-            font-size: 40px;
-           }
-           .t1{
-            text-align: center;
-            width: 100%;
-            height: 400px;
-           }
-           h1{
-            text-align: center;
-           }
-           .mar{
-            background-color: green;
-           }
-
+       .table-container {
+          width: 100%;
+          /* height: 450px; */
+          overflow-x:auto ;
+          /* margin: 20px 0; */
+          text-align:center;
+       }
+       table{
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 600px;
+       }
+       th, td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+       }
+       th{
+        background-color: white;
+       }
+       .mar{
+        background-color: green;
+       }
+       .t1{
+        text-align: center;
+       }
+          
+           
     </style>
 </head>
 <body>
-    <table border="5" class="t1">
-        <h1>TIME TABLE</h1>
+    <table border="5" class="table-container">
+        <h1 class="t1">TIME TABLE</h1>
         <th class="haed">Day/Periood</th>
         <th class="haed">I<br>9:30-10:20</th>
         <th class="haed"> II<br>10:20-11-10</th>
@@ -86,7 +98,7 @@
         </tr>
     </table>
     <div class="mar">
-    <marquee behavior="" direction="" >THIS TIMETABLE WAS DESIGNED BY AKAKPO YOHANES AND WAS SUMMITTED INTO CITSA DATABASE AND ALSO IS EMBEDDED INTO STRUCTURAL ANALYTICAL GATEWAYS IN GTAAUTO IV 20232></marquee>
+    <marquee behavior="" direction="" class="mar">THIS TIMETABLE WAS DESIGNED BY AKAKPO YOHANES AND WAS SUMMITTED INTO CITSA DATABASE AND ALSO IS EMBEDDED INTO STRUCTURAL ANALYTICAL GATEWAYS IN GTAAUTO IV 20232></marquee>
     </div>
 </body>
 </body>
